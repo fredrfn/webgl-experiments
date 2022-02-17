@@ -1,18 +1,15 @@
 import * as React from "react";
 import "./Banner.scss";
 
-interface IProps {
+interface BannerProps {
   name: string;
 }
 
-export default class Banner extends React.Component<IProps> {
-  public render() {
-    return (
-      <div className="banner">
-        <span className="banner__text">
-          Hello {this.props.name}!
-        </span>
-      </div>
-    );
-  }
+export default function Banner(props: BannerProps) {
+  const { name } = props;
+  return (
+    <div className="banner">
+      <span className="banner__text">Hello {name}!</span>
+    </div>
+  );
 }

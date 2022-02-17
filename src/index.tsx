@@ -9,5 +9,5 @@ ReactDOM.render(
   <div>
     <Banner name="Max" />
   </div>,
-  document.getElementById("app"),
+  document.getElementById("app")
 );
